@@ -9,6 +9,9 @@
 
 
 	function myFunction() {
-		document.body.style.background = 'red';
+		var color_list = ['red', 'blue', 'green', 'yellow'];
+		var max = color_list.length;
+		var rand_number = Math.floor(Math.random() * (max + 1))
+		document.body.style.background = color_list[rand_number];
 	}
 </script>
